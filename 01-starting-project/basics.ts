@@ -49,7 +49,15 @@ let course = 'React';
 let firstName: string | string[];
 
 let varName: string | number | boolean = 'React';
-
 varName = 777;
-
 varName = true;
+
+
+// Type Alias
+type Person = {
+    name: string,
+    age: number
+};
+
+let personObj : Person;
+let personArr : Person[];
