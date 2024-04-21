@@ -40,6 +40,16 @@ let people : {
     age: number
 }[];
 
-//Type inference: 
+//Type inference: not nescessary to define type always
 let course = 'React';
 // course = 123;
+
+// Union Types: it is a type defintion that allows more than 1 type
+
+let firstName: string | string[];
+
+let varName: string | number | boolean = 'React';
+
+varName = 777;
+
+varName = true;
