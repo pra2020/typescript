@@ -76,3 +76,23 @@ function add1(a: number, b: number): number | string {
 function printOp(value: any) {
     console.log(value);   
 }
+
+// Generics: type safe and flexible
+/* function insertAtBegin(array: any[], value: any){
+    const newArray = [value, ...array]
+    return newArray;
+} */
+function insertAtBegin<T>(array: T[], value: T){
+    const newArray = [value, ...array]
+    return newArray;
+}
+
+const demoArray = [1,2,3];
+
+const updatedArray = insertAtBegin(demoArray, -1);
+const stringArray = insertAtBegin(['a','b','c'], 'd');
+
+// this will not work for numbers
+// updatedArray[0].split('');
+
+stringArray[0].split('');
