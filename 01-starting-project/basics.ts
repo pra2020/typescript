@@ -61,3 +61,18 @@ type Person = {
 
 let personObj : Person;
 let personArr : Person[];
+
+// function and func types
+
+function add(a: number, b: number) {
+    return a+b;
+}
+// OR
+
+function add1(a: number, b: number): number | string {
+    return a+b;
+}
+
+function printOp(value: any) {
+    console.log(value);   
+}
